@@ -1,0 +1,70 @@
+.sidebarCont{
+    /* border-right: 1px solid #dcdcdc; */
+    width:  250px;
+    height: 100%;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+   
+}
+
+.sidebarContM{
+    /* border-right: 1px solid #dcdcdc; */
+    width:  250px;
+    height: 100%;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+}
+
+.Logo{
+    margin-top:  50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+
+.logoTitle{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+    animation: logoani 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes logoani {
+    from{ top: 0; color: black;}
+    to{top: 40px; color: #dcdcdc;}
+}
+
+.menus{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+}
+
+@media ( max-width: 768px ) {
+    .sidebarCont{
+        position: absolute;
+        background-color: black;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .sidebarContM{
+        position: absolute;
+        background-color: black;
+        margin-left: -250px ;
+        transition: 0.5s;
+        z-index: 10;
+    }
+}

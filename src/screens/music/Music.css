@@ -1,0 +1,32 @@
+.MusicCont{
+    width: 100%;
+    height: 100vh;
+    border-left: 1px solid #dcdcdc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.musicIcon {
+    margin-top: 20px;
+    animation: musicIconani 3s infinite;
+}
+
+@keyframes musicIconani {
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.musicText{
+    animation: musicTextani 1.5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes musicTextani {
+    from{ transform:  translateX(-10%);}
+    to{transform: translateX(10%);}
+}

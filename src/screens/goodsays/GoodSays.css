@@ -1,0 +1,9 @@
+.goodsayscont{
+    min-height:  100vh;
+    flex-wrap: wrap;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    border-left: 1px solid #dcdcdc;
+}
